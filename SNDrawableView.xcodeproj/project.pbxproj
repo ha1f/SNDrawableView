@@ -8,12 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		84B5EE531DF03B7600FFEE1B /* SNDrawableView.h in Headers */ = {isa = PBXBuildFile; fileRef = 84B5EE511DF03B7600FFEE1B /* SNDrawableView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		84B5EE5A1DF03B9700FFEE1B /* DrawableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B5EE591DF03B9700FFEE1B /* DrawableView.swift */; };
+		84B5EE8C1DF03E0900FFEE1B /* SNDrawView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B5EE891DF03E0900FFEE1B /* SNDrawView.swift */; };
+		84B5EE8D1DF03E0900FFEE1B /* SNPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B5EE8A1DF03E0900FFEE1B /* SNPath.swift */; };
+		84B5EE8E1DF03E0900FFEE1B /* SNPathBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B5EE8B1DF03E0900FFEE1B /* SNPathBuilder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		84B5EE4E1DF03B7600FFEE1B /* SNDrawableView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SNDrawableView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84B5EE511DF03B7600FFEE1B /* SNDrawableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SNDrawableView.h; sourceTree = "<group>"; };
 		84B5EE521DF03B7600FFEE1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84B5EE591DF03B9700FFEE1B /* DrawableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawableView.swift; sourceTree = "<group>"; };
+		84B5EE891DF03E0900FFEE1B /* SNDrawView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SNDrawView.swift; sourceTree = "<group>"; };
+		84B5EE8A1DF03E0900FFEE1B /* SNPath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SNPath.swift; sourceTree = "<group>"; };
+		84B5EE8B1DF03E0900FFEE1B /* SNPathBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SNPathBuilder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,10 +54,22 @@
 		84B5EE501DF03B7600FFEE1B /* SNDrawableView */ = {
 			isa = PBXGroup;
 			children = (
+				84B5EE881DF03E0900FFEE1B /* SNDraw */,
+				84B5EE591DF03B9700FFEE1B /* DrawableView.swift */,
 				84B5EE511DF03B7600FFEE1B /* SNDrawableView.h */,
 				84B5EE521DF03B7600FFEE1B /* Info.plist */,
 			);
 			path = SNDrawableView;
+			sourceTree = "<group>";
+		};
+		84B5EE881DF03E0900FFEE1B /* SNDraw */ = {
+			isa = PBXGroup;
+			children = (
+				84B5EE891DF03E0900FFEE1B /* SNDrawView.swift */,
+				84B5EE8A1DF03E0900FFEE1B /* SNPath.swift */,
+				84B5EE8B1DF03E0900FFEE1B /* SNPathBuilder.swift */,
+			);
+			path = SNDraw;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -95,6 +115,7 @@
 				TargetAttributes = {
 					84B5EE4D1DF03B7600FFEE1B = {
 						CreatedOnToolsVersion = 8.1;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -131,6 +152,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84B5EE5A1DF03B9700FFEE1B /* DrawableView.swift in Sources */,
+				84B5EE8C1DF03E0900FFEE1B /* SNDrawView.swift in Sources */,
+				84B5EE8D1DF03E0900FFEE1B /* SNPath.swift in Sources */,
+				84B5EE8E1DF03E0900FFEE1B /* SNPathBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,6 +264,7 @@
 		84B5EE571DF03B7600FFEE1B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -250,6 +276,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = net.ha1f.SNDrawableView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -257,6 +284,7 @@
 		84B5EE581DF03B7600FFEE1B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -291,6 +319,7 @@
 				84B5EE581DF03B7600FFEE1B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,0 +1,10 @@
+framework module SNDrawableView {
+  umbrella header "SNDrawableView.h"
+
+  export *
+  module * { export * }
+}
+
+module SNDrawableView.Swift {
+    header "SNDrawableView-Swift.h"
+}
