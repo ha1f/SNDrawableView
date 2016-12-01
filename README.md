@@ -34,6 +34,17 @@ By calling `.getImage()` , We can get image as UIImage.
 
 Typically, `.undo()`, `.redo()`, and `.clear()` are associated to each button.
 
+
+## Getting Started
+
+use Carthage.
+
+```Cartfile
+github "ha1fha1f/SNDrawableView"
+```
+
+or copy framework inside your project. (like Demo project)
+
 ## Sample
 
 You can see demo project in the `Demo` folder.
