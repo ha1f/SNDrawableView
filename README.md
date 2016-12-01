@@ -6,6 +6,11 @@ SNDrawableView is very simple view we can write on it, inherited from UIView.
 
 This project is fully dependent on [snakajima/SNDraw](https://github.com/snakajima/SNDraw).
 
+## Requirement
+
+Xcode 8
+iOS 8.0 +
+
 ## Usage
 
 We have three parameters to configure.
