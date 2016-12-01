@@ -1,7 +1,7 @@
 ## Overview
 SNDrawableView is very simple view we can write on it, inherited from UIView.
 
-![screenshot](https://raw.githubusercontent.com/ha1fha1f/SNDrawableView/master/screenshots/screenshot.png)
+![screenshot](https://raw.githubusercontent.com/ha1f/SNDrawableView/master/screenshots/screenshot.png)
 
 
 This project is fully dependent on [snakajima/SNDraw](https://github.com/snakajima/SNDraw).
@@ -45,7 +45,7 @@ Typically, `.undo()`, `.redo()`, and `.clear()` are associated to each button.
 use Carthage.
 
 ```Cartfile
-github "ha1fha1f/SNDrawableView"
+github "ha1f/SNDrawableView"
 ```
 
 or copy framework inside your project. (like Demo project)
