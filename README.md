@@ -21,6 +21,8 @@ We have three parameters to configure.
 `.numberOfQueuesToUndo` represents the number of operations we can undo.
 default value = 30
 
+And we have 4 methods to execute.
+
 ```swift
 .clear()
 .redo()
