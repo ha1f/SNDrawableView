@@ -92,11 +92,21 @@ extension DrawableView: SNDrawViewDelegate {
         layerCurve.lineWidth = lineWidth
         layerCurve.fillColor = UIColor.clear.cgColor
         layerCurve.strokeColor = lineColor
-        layerCurve.lineCap = "round"
-        layerCurve.lineJoin = "round"
+        layerCurve.lineCap = convertToCAShapeLayerLineCap("round")
+        layerCurve.lineJoin = convertToCAShapeLayerLineJoin("round")
         self.layer.addSublayer(layerCurve)
         layers.append(layerCurve)
         
         return true
     }
+}
+
+// Helper function inserted by Swift 4.2 migrator.
+fileprivate func convertToCAShapeLayerLineCap(_ input: String) -> CAShapeLayerLineCap {
+	return CAShapeLayerLineCap(rawValue: input)
+}
+
+// Helper function inserted by Swift 4.2 migrator.
+fileprivate func convertToCAShapeLayerLineJoin(_ input: String) -> CAShapeLayerLineJoin {
+	return CAShapeLayerLineJoin(rawValue: input)
 }
