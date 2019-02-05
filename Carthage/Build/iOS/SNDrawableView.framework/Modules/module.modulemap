@@ -7,4 +7,5 @@ framework module SNDrawableView {
 
 module SNDrawableView.Swift {
     header "SNDrawableView-Swift.h"
+    requires objc
 }
